@@ -15,6 +15,7 @@ import { AuthContext } from './Components/AuthContext';
 import axios from "axios";
 import "./Styles/app.scss"
 import Home2 from './Components/Home2';
+import HomeMain from './Components/HomeMain';
 function App() {
   
   return (
@@ -29,7 +30,8 @@ function App() {
         <Route path='/profile' element={<><Header /><Profile /></>} />
         <Route path='/report' element={<><Header /><Report /></>} />
         <Route path='/status' element={<><Header/><Status/></>}/>
-        <Route path='/' element={<Home2/>}/>
+        <Route path='/' element={<HomeMain/>} />
+        <Route path='/h3' element={<Home2/>}/>
     </Routes>
     {/* <Footer/> */}
     <Toaster/>
